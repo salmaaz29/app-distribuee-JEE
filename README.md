@@ -38,11 +38,6 @@ mvn clean install wildfly:deploy
 cd ../getudiants-web
 mvn clean package wildfly:deploy
   ```
-##  🚀 Utilisation
-Accéder à l’application :
- ```
-👉 http://localhost:8080/getudiants-web/
- ```
 
 ## ✨ Fonctionnalités
 CRUD complet (ajouter, modifier, supprimer, consulter)
@@ -54,7 +49,22 @@ CRUD complet (ajouter, modifier, supprimer, consulter)
 ## 🧩 Structure du projet
  ```
 app-distribuee/
-├── getudiants-ejb/      # Logique métier et persistance
-├── getudiants-web/      # Interface utilisateur (JSF)
-└── pom.xml              # POM parent
+├── ejb-module/    
+│   ├── src/main/java/fstt/getudiants/
+│   │   ├── entities/        # Entités JPA
+│   │   ├── ejb/             # EJBs + implémentations
+│   └── resources/META-INF/
+│       └── persistence.xml  
+│   └── pom.xml
+│
+├── web-module/              
+│   ├── src/main/java/fstt/getudiants/
+│   │   └── web/             # Servlets
+│   └── src/main/webapp/
+│       ├── WEB-INF/
+│       └── Pages JSF 
+│   └── pom.xml
+│
+└── pom.xml                  # POM parent
+
  ```
