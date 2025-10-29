@@ -13,7 +13,7 @@ Elle est composée de deux modules :
 
 - **JDK 17+**  
 - **Maven 3.8+**  
-- **WildFly 37.0.1.Final**  
+- **WildFly 38.0.0.Final**  
 - **MySQL 8.0+**  
 
 ---
