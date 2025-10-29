@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+<persistence-unit name="mycnx" transaction-type="JTA">
+    <jta-data-source>java:/GetudiantsDS</jta-data-source>
+    <class>fstt.getudiants.entities.Module</class>
+    <class>fstt.getudiants.entities.Suivie</class>
+    <class>fstt.getudiants.entities.Etudiant</class>
+
+
+
+    <properties>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+        <property name="hibernate.default_schema" value="getudiants"/>
+        <property name="hibernate.hbm2ddl.auto" value="none"/>
+        <property name="hibernate.show_sql" value="true" />
+        <property name="hibernate.format_sql" value="true" />
+        <property name="hibernate.connection.charSet" value="UTF-8"/>
+        <property name="hibernate.connection.characterEncoding" value="UTF-8"/>
+        <property name="hibernate.connection.useUnicode" value="true"/>
+    </properties>
+</persistence-unit>
+</persistence>
