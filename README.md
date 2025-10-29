@@ -4,8 +4,8 @@
 
 Cette application web distribuée permet de gérer les étudiants à l’aide de **Jakarta EE**.  
 Elle est composée de deux modules :  
-- **getudiants-ejb** : contient la logique métier et la couche de persistance.  
-- **getudiants-web** : gère l’interface utilisateur avec **JSF (Jakarta Server Faces)**.
+- **ejb-module** : contient la logique métier et la couche de persistance.  
+- **web-module** : gère l’interface utilisateur.
 
 ---
 
