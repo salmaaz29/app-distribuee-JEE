@@ -33,9 +33,9 @@ Configurer le driver MySQL et la datasource dans WildFly.
 Déployer les modules :
 
   ```
-cd getudiants-ejb
+cd ejb-module
 mvn clean install wildfly:deploy
-cd ../getudiants-web
+cd web-module
 mvn clean package wildfly:deploy
   ```
 
